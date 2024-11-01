@@ -1,0 +1,11 @@
+.notitle>th {display:none}
+.narrow {width:120px;}
+
+#addinstancew table tr td {display:block;float:left;}
+#addinstancew table tr td:nth-child(3n) {clear:left;}
+#addinstancew table tr td.last {clear:left;}
+
+tr[id^="advannced_"] {padding-left:22px;margin:0 0 22px 22px;background-color:grey;word-wrap: break-word;vertical-align: inherit;border-color: inherit;}
+tr[id^="advannced_"] td {display:block;float:left;color:white;width:100%;}
+
+.required {border:1px solid orange;}

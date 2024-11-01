@@ -1,0 +1,86 @@
+.tc_field, .tc_button {float:left;width:auto;display:block;margin-right:4px;}
+.tc_field input, .tc_field select {width:220px !important;    background: #f7f7f7;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    color: #686868;
+    padding: 0.625em 0.4375em;}
+.tc_button input[type=submit], .tc_button input[type=reset] {    background: #1a1a1a;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;}
+
+.tc_filed input[type=submit]:hover, .tc_field input[type=reset]:hover { background: #007acc; }
+
+select#tc_country {width:120px !important;}
+
+.tc_message_confirm {background-color:green;color:white;padding:6px;border-radius:4px;margin:4px 0px;}
+.tc_message_error {background-color:red;color:white;padding:6px;border-radius:4px;margin:4px 0px;}
+
+.tc_div_ricaricaweb {
+	display:block;
+	/* keep proportion */
+	width: 600px;
+	height: 400px;
+}
+.tc_div_ricaricaweb::before {
+	content: " ";
+	display: block;
+	height: 21.5%;
+	background:url(../images/top.png) top left no-repeat;
+	background-size: 100%;
+	top: 0px;
+}
+.tc_div_ricaricaweb::after {
+	content: " ";
+	display: block;
+	height: 39.25%;
+	background:url(../images/bottom.png) bottom left no-repeat;
+	background-size: 100%;
+	bottom: 0px;
+	margin: -10% 0 0 0;
+}
+.tc_div_ricaricaweb .tc_div_content {
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	background: url(../images/midle.png) top left repeat-y;
+	background-size: 100%;
+}
+.tc_div_ricaricaweb .tc_button input, .tc_field input, .tc_field select {
+	float: left;
+	display: block;
+	width: auto;
+	margin: 4px;
+	border-radius: 8px;
+	border: 1px solid #0076a3;
+	line-height:1.4em;
+	height: 40px;
+	font-size: 1em;
+	padding-left: 6px;
+}
+.tc_div_ricaricaweb #tc_taglio {width:23%;margin:0 0 0 5%;}
+.tc_div_ricaricaweb #tc_country {width:19%;margin:0 0 0 1%;}
+.tc_div_ricaricaweb #tc_ani {width:43%;margin:0 0 0 1%;}
+.tc_div_ricaricaweb #tc_customer_email {width:87%;margin:1% 0 0 5%;}
+.tc_div_ricaricaweb .tc_button input[type=submit] {background-color: #39b54a;color: #fff;border:none;width:44%;margin:1% 0 0 5%;}
+.tc_div_ricaricaweb .tc_button input[type=reset] {background-color: #8e8e8e;color: #fff;border:none;width:43%;margin:1% 0 0 1%;}
+.tc_div_ricaricaweb .tc_message_error {width:87%;margin:1% 0 0 5%;color:red;}
+.tc_div_ricaricaweb .tc_message_error {width:86%;margin:0 0 0 6%;color:red;}
+.tc_div_ricaricaweb .tc_message_confirm {width:86%;margin:0 0 0 6%;color:green;}
+@media all and (max-width: 300px) {
+	.tc_div_ricaricaweb .tc_button input, .tc_field input, .tc_field select {
+		width: 90%;
+		pargin: 0 5%;
+	}
+	.tc_div_ricaricaweb .tc_div_content {
+		height: auto;
+	}
+}
+

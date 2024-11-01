@@ -1,0 +1,130 @@
+.tc_div_ricaricaweb {
+	display:block;
+	/* keep proportion */
+	width: 92%;
+	border: 2px solid #dedede;
+	border-top: 12px solid #dedede;
+	border-bottom: 12px solid #dedede;
+	border-radius: 70px;
+	padding: 4% 4% 0px 4%;
+	float: left;
+	box-shadow: 3px 3px 4px #888;
+}
+.tc_div_ricaricaweb:after {
+	display:block;
+	float:left;
+	content:'';
+	height:51px;
+	width:80%;
+	margin: 14px 10% 0px 10%;
+	background: url(../templates/images/bottom.png) center center no-repeat;
+}
+.tc_div_ricaricaweb .tc_div_content {
+	width: 100%;
+	margin: 0px;
+	background-size: 100%;
+	display: block;
+	float: left;
+}
+.tc_div_ricaricaweb.cc .tc_div_content, .tc_div_ricaricaweb.paypal .tc_div_content {padding-top:22px;}
+.tc_field.wide {width:86%;height:46px;display:block;float:left;margin:0 11%;}
+.tc_field.wide #tc_ani, .tc_field.wide #tc_coupon {width:87%;}
+.tc_div_ricaricaweb .tc_button input, .tc_field input, .tc_field select {
+	float: left;
+	display: block;
+	width: auto;
+	margin: 4px;
+	border-radius: 8px;
+	border: 1px solid #0076a3;
+	line-height:1.4em;
+	height: 40px;
+	font-size: 1em;
+	padding-left: 6px;
+}
+.tc_div_ricaricaweb #tc_taglio {width:23%;margin:0 0 0 5%;}
+.tc_div_ricaricaweb #tc_country {width:19%;margin:0 0 0 1%;}
+.tc_div_ricaricaweb #tc_ani {width:43%;margin:0 0 0 1%;}
+.tc_div_ricaricaweb #tc_coupon, .tc_div_ricaricaweb .coupon {width: 66%;margin: 1% 0 0 15%;border-style: dashed;border-width: 3px;padding: 6px;font-size: 1.4em;
+border-color: #e6c178;display: block;
+    float: left;
+    text-align: center;
+    color: #865c0b;}
+.tc_div_ricaricaweb #anicheck {width:43%;margin:4px 0 0 49%;}
+.tc_div_ricaricaweb #tc_customer_email {width:87%;margin:1% 0 0 5%;}
+.tc_div_ricaricaweb .tc_button input[type=submit] {background-color: #39b54a;color: #fff;border:none;width:44%;margin:1% 0 0 5%;}
+.tc_div_ricaricaweb .tc_button.wide input[type=submit] {background-color: #39b54a;color: #fff;border:none;width:76%;margin:1% 0 0 11%;}
+.tc_div_ricaricaweb .tc_button input[type=reset] {background-color: #8e8e8e;color: #fff;border:none;width:43%;margin:1% 0 0 1%;}
+.tc_message_error { width: 600px; margin: 0 0 12px 0; background-color: red !important; border-radius: 12px; padding: 6px; color: white !important; }
+.tc_message_confirm { width: 600px; margin: 0 0 12px 0; background-color: green !important; border-radius: 12px; padding: 6px; color: white !important; }
+
+.pwselector { display:block; float:left; margin:4px; cursor:pointer; width:48%; height:42px; }
+.pwselector img {margin-left:-11px;width:100%;}
+.pwselector input[type=radio] {height:22px;visibility:hidden;}
+.pwselector.paypal::before  {display:block;float:left;content:' ';width:164px;height:40px; background-image: url("../templates/images/paypal-off.png"); background-repeat: no-repeat; visibility:visible;cursor:pointer;}
+.pwselector.paypal.checked::before  {display:block;float:left;content:' ';width:164px;height:40px; background-image: url("../templates/images/paypal-on.png"); background-repeat: no-repeat; visibility:visible;cursor:pointer;}
+.pwselector.creditcard::before  {display:block;float:left;content:' ';width:164px;height:40px; background-image: url("../templates/images/credit-card-off.png"); background-repeat: no-repeat; visibility:visible;cursor:pointer;}
+.pwselector.creditcard.checked::before  {display:block;float:left;content:' ';width:164px;height:40px; background-image: url("../templates/images/credit-card-on.png"); background-repeat: no-repeat; visibility:visible;cursor:pointer;}
+
+.tc_error {border-bottom:3px solid red !important;}
+
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.tc_div_ricaricaweb {
+		width: 100%;
+	}
+	.tc_div_ricaricaweb .tc_div_content, .tc_div_ricaricaweb.cc .tc_div_content, .tc_div_ricaricaweb.paypal .tc_div_content {
+	    padding: 0px;
+	    display: block;
+	    float: left;
+	}
+	.tc_div_ricaricaweb:before {
+		height:10%;
+	}
+	.tc_div_ricaricaweb:after {
+		margin: 63% 0 0 0;
+	}
+	.tc_div_ricaricaweb.paypal:after, .tc_div_ricaricaweb.cc:after{
+		margin: 31% 0 0 0;
+	}
+	.tc_div_ricaricaweb .tc_field {
+		display:block;
+		float:left;
+		width:100%;
+	}
+	
+	.tc_div_ricaricaweb .tc_field.wide {
+		height: auto;
+	}
+	
+	.tc_div_ricaricaweb .tc_field input, .tc_div_ricaricaweb .tc_field select {
+		width:90% !important;
+		margin: 0 0 4px 5% !important;
+	}
+	.tc_div_ricaricaweb .tc_button input, .tc_field input, .tc_field select {
+		width: 90% !important;
+		margin: 0 5% !important;
+	}
+	.tc_div_ricaricaweb .tc_div_content {
+		height: auto;
+	}
+	.tc_div_ricaricaweb.cc .tc_div_content, .tc_div_ricaricaweb.paypal .tc_div_content {
+		padding:0px;
+	}
+	.tc_message_error { width: 100%; }
+	.tc_message_confirm { width: 100%; }
+/*
+	.pwselector {
+		display: block;
+		width:70% !important;
+		float:left;
+	}
+	.pwselector.paypal:before, .pwselector.creditcard:before {
+		background-size:100%;
+		width:100%;
+	}
+*/
+}
+
